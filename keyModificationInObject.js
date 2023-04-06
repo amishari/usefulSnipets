@@ -1,3 +1,4 @@
+// Note: keys of old obj(here named obj) would be replaced by  value of new Obj( here keysMap), that is logic of updating. See result.
 //by reduce
 renameKeys = (keysMap, obj) => {
 	Object.keys(obj).reduce(
@@ -12,7 +13,7 @@ const obj = { oldKey1: "value1", oldKey2: "value2", another: "1" };
 
 const keysMap = { oldKey1: "newKey1", oldKey2: "newKey2" };
 
-// {newKey1: 'value1', newKey2: 'value2', another: '1'}
+// Result: {newKey1: 'value1', newKey2: 'value2', another: '1'}
 //-----------------------------------------
 // By map
 function renameKeys(obj, newKeys) {
